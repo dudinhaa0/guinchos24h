@@ -25,6 +25,9 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
+      - name: Gerar arquivos do aplicativo
+        run: npm run build
+
       - name: Sincronizar Capacitor
         run: npx cap sync android
 
